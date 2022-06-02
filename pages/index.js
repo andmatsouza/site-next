@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import Menu from "../components/Menu";
 
 function Home() {
@@ -18,6 +19,15 @@ function Home() {
       </Head>
       <Menu />
       <p>Meu site sobre...</p>
+
+      <Script 
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      strategy="beforeInteractive"
+      />
+      <Script 
+      src="custom.js"
+      strategy="afterInteractive"
+      />
     </div>
   );
 }

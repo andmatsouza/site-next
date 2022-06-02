@@ -1,10 +1,37 @@
 import Link from "next/link";
-import Styles from './styles.module.css';
+//import Styles from "./styles.module.css";
 
 const Menu = () => (
-
   <div>
-      <nav className={Styles.navbar}>
+    <nav className="navbar">
+      <div className="maxwidth">
+        <div className="logo">
+          <a href="/">Telelimp</a>
+        </div>
+        <ul className="menu">
+          <li>
+            <a href="/" className="menubtn">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="sobre-empresa" className="menubtn">
+              Sobre Empresa
+            </a>
+          </li>
+          <li>
+            <a href="contato" className="menubtn">
+              Contato
+            </a>
+          </li>
+        </ul>
+        <div className="menubtn">
+          <i className="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    {/*<nav className={Styles.navbar}>
       <div className={Styles.maxwidth}>
         <div className={Styles.logo}><a href="/">Telelimp</a></div>
         <ul className={Styles.menu}>
@@ -16,7 +43,7 @@ const Menu = () => (
           <i className="fas fa-bars"></i>
         </div>
       </div>
-    </nav>
+</nav>*/}
     {/*<Link href="/">
       <a className={Styles.menu}>Home</a>
     </Link>
@@ -29,7 +56,6 @@ const Menu = () => (
       <a className={Styles.menu}>Contato</a>
 </Link>*/}
   </div>
-
 );
 
 export default Menu;
