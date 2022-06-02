@@ -13,7 +13,7 @@ function Home() {
         <title>Telelimp</title>
       </Head>
       <Menu />
-      Meu site sobre...
+      <p>Meu site sobre...</p>
     </div>
   );
 }

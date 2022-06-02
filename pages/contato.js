@@ -13,7 +13,7 @@ function Contato() {
         <title>Contato - Telelimp</title>
       </Head>
       <Menu />
-      Página de contato
+      <p>Página de contato</p>
     </div>
   )
 }

@@ -13,7 +13,7 @@ function SobreEmpresa() {
         <title>Sobre Empresa - Telelimp</title>
       </Head>
       <Menu />
-      Página sobre empresa
+      <p>Página sobre empresa</p>
     </div>
   )
 }

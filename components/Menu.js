@@ -1,22 +1,19 @@
 import Link from "next/link";
-
-const linkStyle = {
-  marginRight: 15
-}
+import Styles from './styles.module.css';
 
 const Menu = () => (
 
   <div>
     <Link href="/">
-      <a style={linkStyle}>Home</a>
+      <a className={Styles.menu}>Home</a>
     </Link>
 
     <Link href="/sobre-empresa">
-      <a style={linkStyle}>Sobre Empresa</a>
+      <a className={Styles.menu}>Sobre Empresa</a>
     </Link>
 
     <Link href="/contato">
-      <a style={linkStyle}>Contato</a>
+      <a className={Styles.menu}>Contato</a>
     </Link>
   </div>
 
