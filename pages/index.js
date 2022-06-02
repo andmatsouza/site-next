@@ -1,8 +1,5 @@
 import Head from "next/head";
 import Menu from "../components/Menu";
-import Image from 'next/image'
-
-import topoImg from '../public/topo.png';
 
 function Home() {
   return (
@@ -17,7 +14,7 @@ function Home() {
       </Head>
       <Menu />
       <p>Meu site sobre...</p>
-      <Image src={topoImg} alt="Topo da página" />
+      
     </div>
   );
 }
