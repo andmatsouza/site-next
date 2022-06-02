@@ -18,16 +18,22 @@ function Home() {
         <title>Telelimp</title>
       </Head>
       <Menu />
-      <p>Meu site sobre...</p>
+      <section className="top">
+        <div className="maxwidth">
+          <div className="topcontent">
+            <div className="text1">Temos a solução</div>
+            <div className="text2">que a sua empresa precisa</div>
+            <div className="text3">Podemos ajudar a sua empresa!</div>
+            <a href="contato">Entrar em Contato</a>
+          </div>
+        </div>
+      </section>
 
-      <Script 
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      strategy="beforeInteractive"
+      <Script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        strategy="beforeInteractive"
       />
-      <Script 
-      src="custom.js"
-      strategy="afterInteractive"
-      />
+      <Script src="custom.js" strategy="afterInteractive" />
     </div>
   );
 }
