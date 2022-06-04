@@ -1,6 +1,8 @@
 import Script from "next/script";
 import Image from "next/image";
-import {PageHead, Menu, Footer, Servicos} from '../components';
+import PageHead from '../components/PageHead';
+import Menu from "../components/Menu";
+import Footer from "../components/Footer";
 import premiumImg from '../public/premium_v5.jpg';
 
 
@@ -23,7 +25,34 @@ function Home() {
         </div>
       </section>
 
-     <Servicos title={"Serviços"} />
+      <section className="services">
+      <div className="maxwidth">
+        <h2 className="title">Serviços</h2>
+        <div className="servcontent">
+          <div className="card">
+            <div class="box">
+              <i className="fas fa-wifi"></i>
+              <div className="text">Wifi veloz</div>
+              <p>Sed nisl elit, eleifend vel elit nec, tempus aliquet eros. Etiam nec blandit tortor.</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="box">
+              <i className="fas fa-rocket"></i>
+              <div className="text">Espaço inpirador</div>
+              <p>Sed nisl elit, eleifend vel elit nec, tempus aliquet eros. Etiam nec blandit tortor.</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="box">
+              <i className="fas fa-handshake"></i>
+              <div className="text">Reuniões</div>
+              <p>Sed nisl elit, eleifend vel elit nec, tempus aliquet eros. Etiam nec blandit tortor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="premium">
       <div class="maxwidth">
