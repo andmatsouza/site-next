@@ -1,0 +1,25 @@
+.maxwidth {
+  max-width: 1300px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.services {
+  color: #fff;
+  background-color: #0c0f16;
+  font-family: 'Poppins', sans-serif;
+}
+
+.services .servcontent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services .title {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 35px;
+  font-weight: 400;
+}
