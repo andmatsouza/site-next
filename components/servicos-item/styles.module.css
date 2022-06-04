@@ -1,0 +1,52 @@
+.card {
+  width: calc(33% - 20px);
+  background: #1b202a;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: #b02ab7;
+}
+
+.card i {
+  font-size: 50px;
+  color: #b02ab7;
+  transition: all 0.3s ease;
+}
+
+.card:hover i {
+  color: #fff;  
+}
+
+.card .box {
+  transition: all 0.3s ease;
+}
+
+.card:hover .box {
+  transform: scale(1.05);
+}
+
+.card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+@media (max-width: 947px) {
+  .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+
+  }
+}
+
+@media (max-width: 690px) {
+  .card {
+    width: 100%;
+    
+  }
+}
