@@ -1,16 +1,39 @@
-import Script from "next/script";
+//import Script from "next/script";
 import Image from "next/image";
-import {PageHead, Menu, Footer, Servicos} from '../components';
-import premiumImg from '../public/premium_v5.jpg';
+import { PageHead, Menu, Footer, Servicos } from "../components";
+import premiumImg from "../public/premium_v5.jpg";
+//import { useStore } from '../../stores';
+//import create from "zustand";
 
+{/*const useStore = create((set) => {
+  
+  return {
+  bears: 0,
+  isOpen: false,
+  toggleModal: () => set((state) => ({ isOpen: !state.isOpen})),
+  increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
+  removeAllBears: () => set({ bears: 0 }),
+}
+});
+
+function BearCounter() {
+  const bears = useStore((state) => state.bears);
+  return <h1>{bears} around here ...</h1>;
+}*/}
 
 function Home() {
+ // const increasePopulation = useStore((state) => state.increasePopulation);
+  //const toggleModal = useStore((state) => state.toggleModal);
+  //const removeAllBears = useStore((state) => state.removeAllBears); 
+ //const  isOpen  = useStore((state) => state.isOpen);
+ 
+
   return (
-    <div>      
+    <div>
       <PageHead
-      title="Telelimp"
-      description="Site sobre material de limpeza"
-    ></PageHead>      
+        title="Telelimp"
+        description="Site sobre material de limpeza"
+      ></PageHead>
       <Menu />
       <section className="top">
         <div className="maxwidth">
@@ -23,34 +46,49 @@ function Home() {
         </div>
       </section>
 
-     <Servicos title={"Serviços"} />
+     {/*isOpen ? <Servicos title={"Serviços"} /> : ""*/} 
+     
 
-    <section class="premium">
-      <div class="maxwidth">
-        <h2 class="title">Serviço Premium</h2>
-        <div class="premiumcontent">
-          <div class="column left">
-            <Image src={premiumImg} alt="Serviço premium" />
-          </div>
-          <div class="column right">
-            <div class="text">
-              Desenvolvido para você atingir seus melhores índices de produtividade,
-              criatividae e bem-estar.
+      <Servicos title={"Serviços"} />
+
+      <section class="premium">
+        <div class="maxwidth">
+          <h2 class="title">Serviço Premium</h2>
+          {/*BearCounter()*/}
+          {/*<button onClick={increasePopulation}>one up</button>
+          <button onClick={removeAllBears}>Remove All</button>
+  <button onClick={toggleModal}>Toggle</button>*/}
+          <div class="premiumcontent">
+            <div class="column left">
+              <Image src={premiumImg} alt="Serviço premium" />
             </div>
-            <p>Sed eget lorem justo. Aliquam enim velit, faucibus bibendum sapien at, posuere pharetra mi. Nam id commodo leo, vitae cursus massa. Phasellus metus nisl, feugiat nec diam ut, malesuada aliquam tortor. Quisque vitae tellus eget neque consectetur efficitur. Nulla et sapien commodo mi mattis pulvinar. Mauris commodo, justo a malesuada pulvinar, tortor libero accumsan elit, et feugiat ipsum justo non quam.</p>
-            <a href="contato">Contato</a>
+            <div class="column right">
+              <div class="text">
+                Desenvolvido para você atingir seus melhores índices de
+                produtividade, criatividae e bem-estar.
+              </div>
+              <p>
+                Sed eget lorem justo. Aliquam enim velit, faucibus bibendum
+                sapien at, posuere pharetra mi. Nam id commodo leo, vitae cursus
+                massa. Phasellus metus nisl, feugiat nec diam ut, malesuada
+                aliquam tortor. Quisque vitae tellus eget neque consectetur
+                efficitur. Nulla et sapien commodo mi mattis pulvinar. Mauris
+                commodo, justo a malesuada pulvinar, tortor libero accumsan
+                elit, et feugiat ipsum justo non quam.
+              </p>
+              <a href="contato">Contato</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <Footer />
+      <Footer />
 
-      <Script
+      {/*<Script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         strategy="beforeInteractive"
       />
-      <Script src="custom.js" strategy="afterInteractive" />
+      <Script src="custom.js" strategy="afterInteractive" />*/}
     </div>
   );
 }
